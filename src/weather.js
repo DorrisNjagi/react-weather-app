@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import "./weather.css";
 
 export default function Weather() {
@@ -22,16 +23,16 @@ export default function Weather() {
             </ul>
             <div className="row" mt-3>
                 <div className="col-6">
-                    <div className="clearfix">
+                   <div className="clearfix">
                     < img src="https://up.yimg.com/ib/th?id=OIP.YKvFSocKFQaoo-56XlWNMwHaHa&pid=Api&rs=1&c=1&qlt=95&w=106&h=106" alt="mostly cold" className="float-left"/>
-                  <div className="float-letf">
+                    <div className="float-letf">
                       <span className="temperature">6</span>
                       <span className="unit">°C</span>
-                  </div>
+                    </div>
                 
                 </div>
             </div>
-                <div className="col-6">
+             <div className="col-6">
                     <ul>
                         <li>precipitation: 15%</li>
                         <li>Humidity: 72%</li>
