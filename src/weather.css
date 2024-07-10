@@ -1,3 +1,15 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .float-left {
+    float: left;
+    margin-right: 10px;
+  }
+
+
 .Weather {
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #dadde1;
@@ -51,5 +63,4 @@ list-style: none;
     position: relative;
     line-height: 1;
     top: -34px;
-    margin-left: 5px;
 }
