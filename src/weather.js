@@ -8,18 +8,22 @@ export default function Weather(props) {
     const [city, setCity] = useState(props.defaultCity);
 
     function handleResponse(response){
+       
+
     setWeatherData({
         ready: true,
         temperature: response.data.temperature.current,
         humidity: response.data.temperature.humidity,
         date: new Date(response.data.time * 1000), 
         description: response.data.condition.description,
-        icon:  response.data.condition.icon_url,
+        icon: response.data.condition.icon_url, 
         wind: response.data.wind.speed,
         city: response.data.city
 
     });
 }
+
+
    
     function search(){
         const apiKey = "cf17b4bet7ba057b439d74o83fd0a50a";
