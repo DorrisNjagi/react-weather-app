@@ -26,12 +26,12 @@ color: #505050;
 display: block;
 font-size: 24px;
 font-weight: 100;
-margin: 20px 0 0 0;
+margin: 20px 10px 20px 10px;
 line-height: 29px;
 }
 
 .Weather ul {
-    margin: 0;
+    margin: 20px 10px 20px 10px;
     padding: 0;
 }
 
@@ -64,6 +64,10 @@ list-style: none;
     position: relative;
     line-height: 1;
     top: -34px;
+}
+
+.WeatherForecast {
+    margin-top: 10px;
 }
 
 
