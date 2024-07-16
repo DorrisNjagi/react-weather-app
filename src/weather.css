@@ -16,13 +16,13 @@
     border: 1px solid #dadde1;
     padding: 16px;
     border-radius: 4px;
-    color: rgb(135, 135, 135);
-    background-color: #a8d7fa;
+    color: rgb(86, 85, 85);
+    background-color: #49c2f6;
 
 }
 
 .Weather h1 {
-color: #878787;
+color: #505050;
 display: block;
 font-size: 24px;
 font-weight: 100;
@@ -64,4 +64,59 @@ list-style: none;
     position: relative;
     line-height: 1;
     top: -34px;
+}
+
+
+@media (max-width: 768px) {
+    .Weather .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Weather .col-9, .Weather .col-3 {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .Weather .col-9 input, .Weather .col-3 input {
+        width: 100%;
+    }
+
+    .Weather h1 {
+        font-size: 20px;
+    }
+
+    .Weather .temperature {
+        font-size: 48px;
+    }
+
+    .Weather .unit {
+        font-size: 14px;
+        top: -24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .Weather .col-9, .Weather .col-3 {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .Weather h1 {
+        font-size: 18px;
+    }
+
+    .Weather .temperature {
+        font-size: 40px;
+    }
+
+    .Weather .unit {
+        font-size: 12px;
+        top: -20px;
+    }
+
+    .WeatherForecast .col {
+        min-width: 80px;
+    }
 }
